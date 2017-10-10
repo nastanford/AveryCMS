@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# FuseBox Parsed Files
+parsed
+
 # User-specific files
 *.suo
 *.user
