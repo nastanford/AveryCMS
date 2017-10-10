@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <title>Avery CMS</title>
     <!-- Bootstrap core CSS -->
-    <link href="includes/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <style>
       body {
@@ -32,10 +32,12 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#myself#=home.main">Home</a>
+              <a class="nav-link" href="#myself#=home.main">Home
+                <span class="sr-only">(current)</span>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#myself#login.form">Login</a>
+              <a class="nav-link" href="#myself#=home.main">Login</a>
             </li>
           </ul>
         </div>
@@ -43,9 +45,15 @@
     </nav>
 
     <!-- Page Content -->
-    <cfoutput>
-      #body#
-    </cfoutput>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <cfoutput>
+              <p>#body#</p>
+          </cfoutput>
+        </div>
+      </div>
+    </div>
  
     <!-- Footer -->
     <footer class="py-5 bg-dark">
@@ -56,9 +64,9 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="includes/admin/vendor/jquery/jquery.min.js"></script>
-    <script src="includes/admin/vendor/popper/popper.min.js"></script>
-    <script src="includes/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="includes/jquery/jquery.min.js"></script>
+    <script src="includes/popper/popper.min.js"></script>
+    <script src="includes/bootstrap/js/bootstrap.min.js"></script>
   </body>
   </cfoutput>
 </html>

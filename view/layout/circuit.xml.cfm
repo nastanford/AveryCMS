@@ -12,5 +12,14 @@
 	<fuseaction name="mainLayout">
 		<include template="lay_template" />
 	</fuseaction>
+
+	<fuseaction name="adminLayout">
+		<include template="lay_admin" />
+	</fuseaction>
+
+	<fuseaction name="loginLayout">
+		<include template="lay_login" />
+	</fuseaction>
+
 	
 </circuit>

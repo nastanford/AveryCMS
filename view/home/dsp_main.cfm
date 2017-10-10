@@ -2,7 +2,13 @@
    <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          Hello Page
+        <br>
+          Main !!!
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         </div>
       </div>
     </div>

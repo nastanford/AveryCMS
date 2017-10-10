@@ -18,9 +18,18 @@
 	<circuits>
 		<!-- illustrates defaults for parent ("") and relative ("true") -->
 		<circuit alias="time" path="model/time/" parent="" />
+
 		<circuit alias="display" path="view/display/" parent="" />
 		<circuit alias="layout" path="view/layout/" parent="" />
+
 		<circuit alias="app" path="controller/" relative="true" />
+
+		<circuit alias="login" path="controller/login" relative="true" />
+		<circuit alias="vLogin" path="view/login" relative="true" />
+    
+		<circuit alias="home" path="controller/home" relative="true" />
+		<circuit alias="vHome" path="view/home" relative="true" />
+
 	</circuits>
 
 	<!--
@@ -30,7 +39,7 @@
 	-->
 
 	<parameters>
-		<parameter name="defaultFuseaction" value="app.welcome" />
+		<parameter name="defaultFuseaction" value="home.main" />
 		<!-- you may want to change this to development-full-load mode: -->
 		<parameter name="mode" value="development-circuit-load" />
 		<parameter name="conditionalParse" value="true" />
